@@ -91,7 +91,9 @@
                 <span> Nombre de usuario</span> <!-- de normal la etiqueta span sirve para colocar estilos determinados a fragmetnos especificos de texto pero en este caso esta siendo utilizada para brindar mas informacion sobre el input de "nombre-usuario"-->
                
                
-                <input type="text" id="nombre-usuario" placeholder="Nombre usuario"> <!--La etiqueta input nos sirve para empezar a interactuar con los usuarios al permitirnos ingresar datos de estos de distintas maneras a travez del atributo type -->
+                <input type="text" id="nombre-usuario" placeholder="Nombre usuario" name="nombre-usuario" autocomplete="username"> <!--La etiqueta input nos sirve para empezar a interactuar con los usuarios al permitirnos ingresar datos de estos de distintas maneras a travez del atributo type -->
+
+                <!-- el atributo autocompletar como su nombre lo indica, nos sirve para poder proporcionar sugerencias automaticas al usuario-->
                 
 
             </label>
@@ -100,11 +102,11 @@
             <label for="contraseña">
 
                 <span> Contraseña</span>
-                <input type="password" id="contraseña" placeholder="contraseña"> <!-- la etiqueta placeholder nos sirve para poder dar un ejemplo de lo que el usuario debe de digitar en el input-->
+                <input type="password" id="contraseña" placeholder="contraseña" name="contraseña" autocomplete="current-password"> <!-- el atributo placeholder nos sirve para poder dar un ejemplo de lo que el usuario debe de digitar en el input. En cambio el atributo name, sirve para poder referenciar los inputs y el contenido de estos a la hora de mandar la informacion a la base de datos-->
 
             </label>
  
-
+            <input type="submit"> <!-- proporciona un boton para mandar la informacion del formulario-->
         </form> 
 
     </main>
