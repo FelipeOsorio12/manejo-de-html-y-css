@@ -85,13 +85,13 @@
             </li>
         </ul> 
 
-        <form action=""> <!-- le indica al navegador que lo hay aqui es un formulario donde el usuario va poder ingresar informacion-->
+        <form action=""> <!-- le indica al navegador que lo hay aqui es un formulario donde el usuario va poder ingresar informacion. Por cada elemento del formulario, este debe tener su propia etiqueta de label-->
             <h2> Iniciar sesion </h2>
             <label for="nombre-usuario">
                 <span> Nombre de usuario</span> <!-- de normal la etiqueta span sirve para colocar estilos determinados a fragmetnos especificos de texto pero en este caso esta siendo utilizada para brindar mas informacion sobre el input de "nombre-usuario"-->
                
                
-                <input type="text" id="nombre-usuario"> <!--La etiqueta input nos sirve para empezar a interactuar con los usuarios al permitirnos ingresar datos de estos de distintas maneras a travez del atributo type -->
+                <input type="text" id="nombre-usuario" placeholder="Nombre usuario"> <!--La etiqueta input nos sirve para empezar a interactuar con los usuarios al permitirnos ingresar datos de estos de distintas maneras a travez del atributo type -->
                 
 
             </label>
@@ -100,7 +100,7 @@
             <label for="contraseña">
 
                 <span> Contraseña</span>
-                <input type="password" id="contraseña">
+                <input type="password" id="contraseña" placeholder="contraseña"> <!-- la etiqueta placeholder nos sirve para poder dar un ejemplo de lo que el usuario debe de digitar en el input-->
 
             </label>
  
