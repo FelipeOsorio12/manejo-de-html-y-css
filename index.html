@@ -111,6 +111,19 @@
             <input type="submit"> <!-- proporciona un boton para mandar la informacion del formulario-->
         </form> 
 
+        <h2> Opciones de pago</h2>
+
+        <input list="medios-pago"> <!-- esta es la mejor forma de remplazar la etiqueta select, puesto que tambien le permite al usuario escrbir dentro de las opciones que hay en la lista-->
+        <datalist id="medios-pago">
+        <option value="Tarjeta"></option>
+        <option value="Efectivo"></option>
+        <option value="Otro"></option> 
+        
+        <!--La etiqueta <input> tiene un atributo list con el valor "medios-pago". Esto vincula el campo de entrada(input) con el elemento <datalist> que tiene el mismo id ("medios-pago").
+        La etiqueta <datalist> contiene opciones (<option>) que representan las sugerencias para autocompletar. Cuando el usuario comienza a escribir en el campo de entrada, el navegador muestra las opciones disponibles del <datalist>. El usuario puede seleccionar una de estas opciones o continuar escribiendo.-->
+        </datalist>
+
+
     </main>
 
 
