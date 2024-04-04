@@ -2,7 +2,7 @@ main{
     background-color: rgb(214, 159, 159);
 }
 body{
-    background-color: rgb(30, 31, 28);
+    background-color: rgb(206, 162, 73);
 }
 
 /* Esta es la forma de hacer comentarios en css */
@@ -21,4 +21,48 @@ body{
 
 #password{
     color: rgb(49, 49, 49);
+}
+
+.barra-busqueda{
+    list-style: none;
+    margin-top: 10px;
+    padding: 20px;  
+    background-color: rgb(248, 181, 150);  
+}
+
+
+.item-barra{
+    display: inline-block; /* en estos moementos nos sirve para poder poner de forma horizontal los elementos de la barra de busqueda */
+    margin-right: 100px; /* corregir mas adalente con flex-box*/
+    margin-left: 50px;   /* corregir mas adalente con flex-box*/
+}
+
+/* Dentro de una clase le podemos decir a css que cambie todas las mismas etiquetas que hay dentro de dicha clase, de la siguiente fomra: */
+.item-barra a{
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: rgb(255, 123, 0);
+}
+
+/*  Otra forma de cambiarle el color del texto de la barra de busqueda
+.texto-barra{
+    color: rgb(0, 0, 0);
+}
+*/
+
+/*La siguiente linea de codigo muestra la implementación de una pseudo clase: */
+
+/* "Hover" es una pseudo-clase la cual permite agregar estilos cuando se interactua con un elemento, especificamente al pasar el mouse sobre este*/ 
+
+.item-barra a:hover{
+    color: black
+}
+
+/* La siguiente linea de codigo muestra la implementación de un pseudo elemento*/
+/* "after" es un pseudo elemento el cual permite agregar contenido despues de que se termina el elemento al que se le aplica */
+
+.item-barra a::after{
+    content: " | ";
 }
