@@ -1,0 +1,24 @@
+main{
+    background-color: rgb(214, 159, 159);
+}
+body{
+    background-color: rgb(30, 31, 28);
+}
+
+/* Esta es la forma de hacer comentarios en css */
+
+/* Para poder aplicarle estilos a una clase de un documento html lo hacemos de la siguiente manera: */
+
+.titulo{
+    font-size: 40px;
+}
+
+/* Para poder aplicarle estilos a un ID de un documetno html lo hacemos de la siguiente manera:  */
+
+#usuario{
+    color: rgb(49, 49, 49);
+}
+
+#password{
+    color: rgb(49, 49, 49);
+}

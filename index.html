@@ -13,7 +13,7 @@
     
     <title>Document</title>
 
-    <link rel="stylesheet" href=""> <!-- sirve para vincular una hojas de estilos al html-->
+    <link rel="stylesheet" href="css\style.css"> <!-- sirve para vincular una hojas de estilos al html-->
 </head>
 
 
@@ -43,7 +43,7 @@
 
         <ul><!-- nos sirve para implementar listas desorganizadas (con viñetas)-->
 
-            <h1>Lista mercado</h1>
+            <h1 class="titulo">Lista mercado</h1>
 
             <figure> <!-- Es una etiqueta contenedora la cual es complementaria a la etiqueta img ya que de esta manera podemos tratar la imagen que queremos subir a la pagina, donde tratar significa darle un tamaña especifico a la foto o tambien ubicarle exactamente donde queramos-->
                 
@@ -86,9 +86,9 @@
         </ul> 
 
         <form action=""> <!-- le indica al navegador que lo hay aqui es un formulario donde el usuario va poder ingresar informacion. Por cada elemento del formulario, este debe tener su propia etiqueta de label-->
-            <h2> Iniciar sesion </h2>
+            <h2 class="titulo"> Iniciar sesion </h2>
             <label for="nombre-usuario">
-                <span> Nombre de usuario</span> <!-- de normal la etiqueta span sirve para colocar estilos determinados a fragmetnos especificos de texto pero en este caso esta siendo utilizada para brindar mas informacion sobre el input de "nombre-usuario"-->
+                <span id="usuario"> Nombre de usuario</span> <!-- de normal la etiqueta span sirve para colocar estilos determinados a fragmetnos especificos de texto pero en este caso esta siendo utilizada para brindar mas informacion sobre el input de "nombre-usuario"-->
                
                
                 <input type="text" id="nombre-usuario" placeholder="Nombre usuario" name="nombre-usuario" autocomplete="username" required> <!--La etiqueta input nos sirve para empezar a interactuar con los usuarios al permitirnos ingresar datos de estos de distintas maneras a travez del atributo type -->
@@ -103,7 +103,7 @@
             
             <label for="contraseña">
 
-                <span> Contraseña</span>
+                <span id="password"> Contraseña</span>
                 <input type="password" id="contraseña" placeholder="contraseña" name="contraseña" autocomplete="current-password" required> <!-- el atributo placeholder nos sirve para poder dar un ejemplo de lo que el usuario debe de digitar en el input. En cambio el atributo name, sirve para poder referenciar los inputs y el contenido de estos a la hora de mandar la informacion a la base de datos-->
 
             </label>
@@ -111,7 +111,7 @@
             <input type="submit"> <!-- proporciona un boton para mandar la informacion del formulario-->
         </form> 
 
-        <h2> Opciones de pago</h2>
+        <h2 class="titulo"> Opciones de pago</h2>
 
         <input list="medios-pago"> <!-- esta es la mejor forma de remplazar la etiqueta select, puesto que tambien le permite al usuario escrbir dentro de las opciones que hay en la lista-->
         <datalist id="medios-pago">
