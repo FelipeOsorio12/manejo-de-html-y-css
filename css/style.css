@@ -1,4 +1,4 @@
-/* El "*" representa el selector universal */
+/* El "*" representa el selector universal. Normalmente cada hoja estilo contara con las tres reglas que definimos abajo para poder aplicar estilos sin ningun tipo de problema */
 *{
     /* Con estas instrucciones le estamos quitando el padding y el margin que le da por defecto el navegador a los diferentes elementos/etiquetas. Lo cual en este ejemplo nos esta ayudando a poder que el contenedor "main" quede en toda la esquina de la pagina y no con un margin de 8px que tenia por defecto el contenedor padre de "main" el cual vendria siendo "body" */
     padding: 0;
